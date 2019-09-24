@@ -1,9 +1,12 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * print_last_digit - prints the last digit of a number
  *
- * Return: Always 0.
+ * @r: int type
+ *
+ * Return:return r final value
  */
+
 int print_last_digit(int r)
 {
 if (r < 0)
