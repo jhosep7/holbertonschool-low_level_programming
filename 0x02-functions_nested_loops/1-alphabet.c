@@ -1,16 +1,16 @@
 #include "holberton.h"
 /**
- * print_alphabet - print alphabet
+ * print_alphabet - prints the alphabet.
  *
- * @void: no return
- *
- * Return: It is not return
+ * Description: Write a function that prints the alphabet.
  */
 void print_alphabet(void)
 {
-for (char i = 'a'; i <= 'z'; i++)
+char x = 'a';
+while (x <= 'z')
 {
-_putchar(i);
+_putchar(x);
+x++;
 }
 _putchar('\n');
 }
