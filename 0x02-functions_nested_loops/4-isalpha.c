@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * _isalpha - a function that prints alphabetic letters
+ * @c: int parameter
  *
- * Return: Always 0.
+ * Return: int value
  */
 int _isalpha(int c)
 {
