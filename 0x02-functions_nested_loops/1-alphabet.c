@@ -1,13 +1,12 @@
 #include "holberton.h"
 /**
- * print_alphabet - a loop to generate a-z text
+ * main - check the code for Holberton School students.
  *
- * description: this function generate the alphabet
- * Return: void
+ * Return: Always 0.
  */
 void print_alphabet(void)
 {
-for (int i = 'a'; i <= 'z'; i++)
+for (char i = 'a'; i <= 'z'; i++)
 {
 _putchar(i);
 }
