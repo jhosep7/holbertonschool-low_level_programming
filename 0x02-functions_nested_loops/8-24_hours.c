@@ -1,8 +1,10 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * jack_bauer - computes the absolute value of an integer
  *
- * Return: Always 0.
+ * @void: it is not expecting a return value
+ *
+ * Return:No returning because of void only putchar.
  */
 void jack_bauer(void)
 {
