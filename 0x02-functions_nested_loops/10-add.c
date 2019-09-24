@@ -1,8 +1,10 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ *  add - adds two integers and returns the result.
  *
- * Return: Always 0.
+ * @x: int type
+ * @y: int type
+ * Return: Returns the value of n the variable in this case.
  */
 int add(int x, int y)
 {
