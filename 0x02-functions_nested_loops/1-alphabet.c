@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * print_alphabet - a loop to generate a-z text
  *
- * Return: Always 0.
+ * description: this function generate the alphabet
+ * Return: void
  */
 void print_alphabet(void)
 {
