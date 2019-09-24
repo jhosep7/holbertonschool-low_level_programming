@@ -1,10 +1,13 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * main - check the code for Holberton School students.
+ * _abs - computes the absolute value of an integer
  *
- * Return: Always 0.
+ * @r: int type
+ *
+ * Return:changes a negative num to positive.
  */
+
 int _abs(int r)
 {
 if (r < 0)
