@@ -1,4 +1,3 @@
-#include "holberton.h"
 #include "stdio.h"
 /**
  * fibonacci - prints the first 50 Fibonacci numbers
@@ -7,7 +6,7 @@
  *
  * Return: int
  */
-int fibonacci(void)
+int main(void)
 {
 int  x = 1;
 long  x1 = 0, x2 = 1, y;
