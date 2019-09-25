@@ -1,8 +1,12 @@
 #include "holberton.h"
+
 /**
- * main - tests function that prints if integer is Post or Neg
- * Return: 0
+ * main - gives the correct output when given a case of 0
+ * @void: 0
+ *
+ * Return: largest number
  */
+
 int main(void)
 {
 int i;
