@@ -1,11 +1,10 @@
 #include <stdio.h>
-
 /**
-* main - causes an infinite loop
-* description: the part causing the loop was commented
-* Return: 0
-*/
-
+ * main - returns the largest of 3 numbers
+ * @void: void
+ *
+ * Return: 0
+ */
 int main(void)
 {
 int i;
