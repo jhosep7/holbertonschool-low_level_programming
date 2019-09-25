@@ -1,3 +1,4 @@
+#include "holberton.h"
 #include <stdio.h>
 /**
  * main - prints the first 98 number
@@ -5,7 +6,7 @@
  * Description: fibobnachi numbers starting from one
  * Return: 0
  */
-int main(void)
+int fibonacci(void)
 {
 long fib1, fib1a, fib1b, fib2, fib2a, fib2b, fib3, fib3a, fib3b;
 long divi = 10000000000;
