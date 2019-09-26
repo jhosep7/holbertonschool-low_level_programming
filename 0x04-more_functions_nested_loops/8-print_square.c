@@ -1,8 +1,8 @@
-#include "holberton.h"
+ #include "holberton.h"
 /**
- * print_diagonal - check the code for Holberton School students.
+ * print_square - check the code for Holberton School students.
  * @size: receives n.
- * Return: Always 0.
+ * Description: Always 0.
  */
 void print_square(int size)
 {
