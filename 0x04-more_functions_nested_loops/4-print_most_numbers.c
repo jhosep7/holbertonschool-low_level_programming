@@ -1,19 +1,20 @@
 #include "holberton.h"
-/**
- * print_most_numbers -  function that prints the numbers
- * @void: no return
- * Return: none
- */
 
+/**
+ * print_most_numbers - prints from 0 to 9 Not 2 or 4
+ * Description:  _putchar twice
+ */
 void print_most_numbers(void)
 {
-for (int i = '0'; i <= '9'; i++)
+int i;
+i = 0;
+while (i < 10)
 {
-if (i == '2' || i == '4')
+if (i != 2 || i != 4)
 {
+_putchar(i + '0');
 i++;
 }
-putchar(i);
 }
-putchar('\n');
+_putchar('\n');
 }
