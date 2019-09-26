@@ -11,8 +11,8 @@ for (i = '0'; i <= '9'; i++)
 {
 if (i != '2' && i != '4')
 {
-putchar(i);
+_putchar(i);
 }
 }
-putchar('\n');
+_putchar('\n');
 }
