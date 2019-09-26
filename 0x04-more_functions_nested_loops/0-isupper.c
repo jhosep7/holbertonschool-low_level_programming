@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <ctype.h>
+
 /**
  * _isupper - function that checks for uppercase characters
  * @c: int type number
@@ -7,7 +7,7 @@
  */
 int _isupper(int c)
 {
-if (isupper(c))
+if (c >= 'A' && c <= 'Z')
 {
 return (1);
 }
