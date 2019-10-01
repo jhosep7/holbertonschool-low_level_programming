@@ -9,7 +9,7 @@ int _strlen(char *s)
 {
 int counter = 0;
 int i;
- for (i = 0; s[i]; i++)
+for (i = 0; s[i]; i++)
 {
 ++counter;
 }
@@ -30,7 +30,7 @@ int x, c;
 int PresentArray = _strlen(s);
 char keeper;
 c = PresentArray;
- for (x=0; c >= x; x++)
+for (x = 0; c >= x; x++)
 {
 keeper = s[x];
 s[x] = s[c];
