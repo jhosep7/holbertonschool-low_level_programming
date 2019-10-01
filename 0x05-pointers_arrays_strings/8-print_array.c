@@ -16,7 +16,7 @@ printf("%d, ", a[n]);
 }
 else
 {
-printf("%d \n", a[n]);
+printf("%d\n", a[n]);
 }
 }
 }
