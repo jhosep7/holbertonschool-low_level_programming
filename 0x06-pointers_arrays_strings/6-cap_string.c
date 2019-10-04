@@ -2,13 +2,14 @@
 
 /**
  * cap_string - capitalizes all words of a string..
- *
+ * @Arr: Array
  * Return: Always 0.
  */
 
 char *cap_string(char *Arr)
 {
-char SpChar[13] = {'\t', '\n', '(', ')', '{', '}', ' ', ',', ';', '.', '!', '?',};
+char SpChar[13] = {'\t', '\n', '(', ')', '{', '}', ' ', ',',
+		   ';', '.', '!', '?',};
 int i, j;
 for (i = 0; Arr[i]; i++)
 {
