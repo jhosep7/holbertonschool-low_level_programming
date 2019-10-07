@@ -17,8 +17,12 @@ s += i;
 return (s);
 }
 }
-if (s[i] == c) 
-i++;
-return (s + i);
-return ('\0'); 
+if (!c)
+{
+return (s);
+}
+else
+{
+return ('\0');
+}
 }
