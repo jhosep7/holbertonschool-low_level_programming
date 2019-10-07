@@ -21,8 +21,5 @@ if (!c)
 {
 return (s);
 }
-else
-{
 return ('\0');
-}
 }
