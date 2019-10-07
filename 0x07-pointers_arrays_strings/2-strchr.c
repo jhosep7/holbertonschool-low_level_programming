@@ -12,12 +12,11 @@ int i;
 for (i = 0; s[i]; i++)
 {
 if (s[i] == c)
-  {
-  s += i;
-  return (s);
-  }
+{
+s += i;
+return (s);
 }
- if (c == '\0') 
-s=0;
- return ('\0');
+}
+i++;
+return (s + i);
 }
