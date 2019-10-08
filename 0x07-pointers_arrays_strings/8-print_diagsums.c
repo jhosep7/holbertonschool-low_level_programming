@@ -18,5 +18,5 @@ for (j = 0; j < size; j++)
 {
 sumaB = sumaB + a[(size - 1) * (j + 1)];
 }
-printf("%i,%i\n", sumaA, sumaB);
+printf("%i, %i\n", sumaA, sumaB);
 }
