@@ -3,7 +3,7 @@
 
 /**
  * _strlen_recursion - check the code for Holberton School students.
- *
+ * @s: char
  * Return: int.
  */
 int _strlen_recursion(char *s)
