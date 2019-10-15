@@ -18,7 +18,7 @@ for (y = 0; s2[y] != '\0'; y++)
 {; }
 str1 = x;
 str2 = y;
-str3 = str1 + str2;
+str3 = str1 + str2 + 1;
 temp = malloc(str3);
 while (*s1 != '\0')
 {
@@ -32,6 +32,5 @@ temp[i] = *s2;
 s2++;
 i++;
 }
-temp[i] = '\0';
 return (temp);
 }
