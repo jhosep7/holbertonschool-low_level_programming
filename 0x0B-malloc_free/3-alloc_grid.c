@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * print_grid - prints a grid of integers
+ * alloc_grid - bidimensional arr
  *
  * @width: width of the grid
  * @height: height of the grid
@@ -11,22 +11,29 @@
  */
 int **alloc_grid(int width, int height)
 {
-  int *arr = (int *)malloc(height * width * sizeof(int));
-
-  int i, j, count = 0;
-  for (i = 0; i < height; i++)
-    {
-      for (j = 0; j < width; j++)
-	{
-	 *(arr + i * width + j) = ++count;
-	}
-    }
-  for (i = 0; i < height; i++)
-    {
-      for (j = 0; j < width; j++)
-	{
-	   *(arr + i * width + j);
-	}
-    }
-  return (arr);
+int i, j;
+int **arr;
+if (width <= 0 || height <= 0)
+{
+return (NULL);
+}
+arr = malloc(height * sizeof(int *));
+if (arr == NULL)
+{
+return (NULL);
+}
+for (i = 0; i < height; i++)
+{
+arr[i] = malloc(width * sizeof(int));
+if (arr[i] == NULL)
+{
+free(arr);
+return (NULL);
+}
+for (j = 0; j < width; j++)
+{
+arr[i][j] = 0;
+}
+}
+return (arr);
 }
