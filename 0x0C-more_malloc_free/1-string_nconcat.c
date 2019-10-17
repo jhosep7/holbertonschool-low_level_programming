@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * maistring_nconcat - concatenates two strings..
+ * string_nconcat - concatenates two strings..
  * @s1:char
  * @s2:char
  * @n: Uint 
@@ -10,7 +10,8 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-  unsigned int i, j, len1, len2;
+  int i, j, len1, len2;
+  int N = n;
   char *Arr;
 
   if (s1 == NULL)
@@ -23,14 +24,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
   for (j = 0; *s2 != '\0'; j++)
     {; }
 
-  if (j <= n)
+  if (N >= j)
     {
-      n = j;
+      N = j;
       Arr = malloc(sizeof(char) * (i + j +1));
     }
   else
     {
-      Arr = malloc(sizeof(char) * (i + n + 1));
+      Arr = malloc(sizeof(char) * (i + N + 1));
       if (Arr == NULL)
 	{return (NULL); }
     }
@@ -38,7 +39,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     {
       Arr[len1] = s1[len1];
     }
-  for (len2 = 0; len2 < n; len2++)
+  for (len2 = 0; len2 < N; len2++)
     {
       Arr[len1++]=s2[len2];
     }
