@@ -4,7 +4,7 @@
 #include <limits.h>
 /**
  * malloc_checked - check the code for Holberton School students.
- *
+ * @b: UN int
  * Return: Always 0nothing.
  */
 void *malloc_checked(unsigned int b)
