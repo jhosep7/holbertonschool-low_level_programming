@@ -9,12 +9,11 @@
  */
 void *malloc_checked(unsigned int b)
 {
-  int *MyAll;
-
-  MyAll = malloc(b);
-  if (MyAll == NULL || b == INT_MAX)
-    {
-      exit(98);
-    }
-  return (MyAll);
+int *MyAll;
+MyAll = malloc(b);
+if (MyAll == NULL || b == INT_MAX)
+{
+exit(98);
+}
+return (MyAll);
 }
