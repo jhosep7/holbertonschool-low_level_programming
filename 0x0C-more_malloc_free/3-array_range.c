@@ -15,8 +15,8 @@ if (min > max)
 {
 return (NULL);
 }
-SumLen = max - min + 1;
-Arr = malloc(sizeof(int) * (SumLen));
+SumLen = max - min;
+Arr = malloc(sizeof(int) * (SumLen + 1));
 if (Arr == NULL)
 {
 return (NULL);
