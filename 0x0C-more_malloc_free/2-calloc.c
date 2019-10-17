@@ -20,9 +20,11 @@ if (Arr == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < nmemb * size; i++)
+i = 0;
+while (i < nmemb * size)
 {
 Arr[i] = 0;
+i++;
 }
 return (Arr);
 }
