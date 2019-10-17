@@ -15,13 +15,13 @@ if (min > max)
 {
 return (NULL);
 }
-SumLen = max - min;
-Arr = malloc(sizeof(int) * (SumLen + 1));
+SumLen = max - min + 1;
+Arr = malloc(sizeof(int) * (SumLen));
 if (Arr == NULL)
 {
 return (NULL);
 }
-for (i = 0; min <= SumLen; i++)
+for (i = 0; i <= SumLen; i++)
 {
 Arr[i] = min++;
 }
