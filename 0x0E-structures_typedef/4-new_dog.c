@@ -1,7 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "dog.h"
-
+#include <stdlib.h>
 
 /**
  *LenArray - Lenght of any array comming in
