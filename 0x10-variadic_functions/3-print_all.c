@@ -34,7 +34,6 @@ void print_all(const char * const format, ...)
 				printf("%s", MyArr);
 				break;
 			}
-			else
 			{printf("(nil)"); }
 			break;
 		}
