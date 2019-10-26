@@ -8,12 +8,16 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list arguments;
-	unsigned int sum = 0;
+	int sum = 0, x = n;
 
-	va_start(arguments, n);
-	for (unsigned int x = 0; x < n; x++)
+	if (n == 0)
 	{
-		sum += va_arg(arguments, unsigned int);
+		return (0);
+	}
+	va_start(arguments, n);
+	while (x--)
+	{
+		sum += va_arg(arguments, int);
 	}
 	va_end(arguments);
 	return (sum);
