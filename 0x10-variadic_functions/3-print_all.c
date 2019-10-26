@@ -34,7 +34,8 @@ void print_all(const char * const format, ...)
 				printf("%s", MyArr);
 				break;
 			}
-			printf("(nil)");
+			else
+			{printf("(nil)"); }
 			break;
 		}
 		if (format[(x + 1)] != '\0' && (format[x] == 'c' ||
