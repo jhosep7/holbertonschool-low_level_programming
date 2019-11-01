@@ -1,4 +1,19 @@
 #include "lists.h"
+
+/**
+ *StringLen - string lenght
+ *@String:string comming str
+ *Return: int
+ */
+int StringLen(const char *String)
+{
+	int x;
+
+	for (x = 0; String[x] != '\0'; x++)
+	{; }
+	return (x);
+}
+
 /**
  * add_node - check the code for Holberton School students.
  * @head:pointerx2
@@ -7,23 +22,22 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	int len = 0;
-	char *MyArr;
+
 	list_t *NewNode;
 
 	NewNode = malloc(sizeof(list_t));
-	if (NewNode == NULL)
+	if (NewNode == NULL || head == NULL)
 	{return (NULL); }
-	MyArr = strdup(str);
-	if (MyArr == NULL)
+	if (str != NULL)
 	{
-		free(NewNode);
-		return (NULL);
+		(*NewNode).str = strdup(str);
+		if ((*NewNode).str == NULL)
+		{
+			free(NewNode);
+			return (NULL);
+		}
+		(*NewNode).len = StringLen((*NewNode).str);
 	}
-	while (str)
-	{len++; }
-	(*NewNode).str = MyArr;
-	(*NewNode).len = len;
 	(*NewNode).next = *head;
 	*head = NewNode;
 	return (NewNode);
