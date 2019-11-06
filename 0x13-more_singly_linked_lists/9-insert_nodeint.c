@@ -8,40 +8,31 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *NewNd, *OldNd, *Aux;
+	listint_t *NewNd, *Aux;
 	unsigned int i;
 
-	if (head == NULL)
-	{return (NULL); }
 	NewNd = malloc(sizeof(listint_t));
-	if (NewNd == NULL)
+	if (head == NULL || NewNd == NULL)
 	{return (NULL); }
 	(*NewNd).n = n;
 	(*NewNd).next = NULL;
-
-	if (idx == 0)
+	if (!idx)
 	{
 		(*NewNd).next = *head;
 		*head = NewNd;
 		return (NewNd);
 	}
-	OldNd = *head;
-	Aux = (**head).next;
-	for (i = 0; Aux != NULL; i++)
+	Aux = *head;
+	while (Aux)
 	{
-		if (i == idx)
+		if (i == idx - 1)
 		{
-			(*OldNd).next = NewNd;
-			(*NewNd).next = Aux;
+			(*NewNd).next = (*Aux).next;
+			(*Aux).next = NewNd;
 			return (NewNd);
 		}
-		OldNd = Aux;
+		i++;
 		Aux = (*Aux).next;
-	}
-	if (Aux == NULL && i == idx)
-	{
-		(*OldNd).next = NewNd;
-		return (NewNd);
 	}
 	free(NewNd);
 	return (NULL);
