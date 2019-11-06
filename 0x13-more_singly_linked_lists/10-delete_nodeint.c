@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * delete_nodeint_at_index - deletes the node at index
+ * @head: str
+ * @index: limit of the nodes
+ * Return: int.
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
