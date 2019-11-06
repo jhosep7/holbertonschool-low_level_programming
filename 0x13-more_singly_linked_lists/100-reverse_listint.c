@@ -8,9 +8,9 @@ listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *OldNd, *Aux;
 
-	if (*head ==NULL)
+	if (*head == NULL)
 	{return (NULL); }
-	if ((*(head))->next == NULL)
+	if ((**(head)).next == NULL)
 	{return (*head); }
 	OldNd = *head;
 	*head = NULL;
