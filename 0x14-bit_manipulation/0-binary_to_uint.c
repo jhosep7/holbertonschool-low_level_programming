@@ -23,9 +23,7 @@ for (i = 0; b[i] != '\0'; i++)
 	}
 	result = result << 1;
 	if (b[i] == '1')
-	{
-		result ^= 1;
-	}
+	{result ^= 1; }
 }
 return (result);
 }
