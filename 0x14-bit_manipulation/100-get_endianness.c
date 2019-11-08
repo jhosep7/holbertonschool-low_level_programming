@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * get_endianness -  checks the endianness.
  *
- * Return: Always 0.
+ * Return: int.
  */
 int get_endianness(void)
 {
@@ -13,6 +13,6 @@ int get_endianness(void)
 	{return (1); }
 	else
 	{
-		{return (0);}
+		{return (0); }
 	}
 }
