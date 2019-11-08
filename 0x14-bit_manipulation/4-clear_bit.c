@@ -7,12 +7,11 @@
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int test = 1;
-	unsigned int size = sizeof(n) * 8;
+	unsigned long int test;
 
-	if (*n == '\0' || (index > size))
+	if ((index > 32))
 	{return (-1); }
-	test = test << index;
+	test = 1 << index;
 	*n = *n & (~test);
 	return (1);
 }
