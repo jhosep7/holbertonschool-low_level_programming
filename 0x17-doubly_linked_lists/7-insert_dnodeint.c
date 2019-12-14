@@ -16,39 +16,30 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{return (NULL);	}
 	NewNode->n = n;
 	NewNode->next = NULL;
-
 	if (*h == NULL)
 	{
 		NewNode->prev = NULL;
 		*h = NewNode;
 		return (NewNode);
 	}
-/*	if (NewNode->n < (*h)->n)
+	Temp1 = *h;
+	if (idx == 0)
 	{
-		NewNode->next = *h;
-		NewNode->prev = NULL;
-		(*h)->prev = NewNode;
-		*h = NewNode
+		NewNode->next = Temp1;
+		Temp1->prev = NewNode;
+		*h = NewNode;
+		return (NewNode);
 	}
-*/	Temp1 = *h;
 	Temp2 = (*h)->next;
 	for (i = 0; Temp1 && i < (idx - 1); i++)
-	{
-		Temp1 = Temp1->next;
-		Temp2 = Temp2->next;
-	}
-	if (NewNode->n > (*h)->n && (*h)->next != NULL)
-	{
-		NewNode->next = Temp2;
-		Temp1->next =NewNode;
-		Temp2->prev = NewNode;
-		NewNode->prev = Temp1;
-	}
+	{Temp1 = Temp1->next, Temp2 = Temp2->next; }
+	if (Temp1->next == NULL)
+	{Temp1->next = NULL; }
 	else
-	{
-		NewNode->next = Temp1->next;
-		NewNode->prev = Temp1;
-		NewNode->next = NULL;
-	}
+	{Temp1->next = NewNode, Temp1->next = NewNode; }
+	NewNode->next = Temp2;
+	Temp1->next = NewNode;
+	Temp2->prev = NewNode;
+	NewNode->prev = Temp1;
 	return (*h);
 }
