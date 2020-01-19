@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * CreatedND - A node created and tested
+ * NewNode - A node created and tested
  * @key: unique
  * @value: the one assosiated to key
  * Return: node
