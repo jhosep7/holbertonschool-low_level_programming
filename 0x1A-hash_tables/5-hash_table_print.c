@@ -17,12 +17,11 @@ printf("{");
 for (i = 0; i < ht->size; i++)
 {
 Temp = ht->array[i];
-for (; Temp; Temp = Temp->next)
+for (; Temp; j++, Temp = Temp->next)
 {
 if (j)
 {printf(", "); }
 printf("'%s':'%s'", Temp->key, Temp->value);
-j++;
 }
 }
 printf("}\n");
