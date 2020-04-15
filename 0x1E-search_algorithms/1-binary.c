@@ -3,7 +3,7 @@
 #include "search_algos.h"
 
 /**
- * binary_search - searches dividing all
+ * Search - searches dividing all
  * @array: int pointer
  * @init: size_t
  * @size: size_t
@@ -26,8 +26,8 @@ int Search(int *array, size_t init, size_t size, int value)
 	if (array[middle] == value)
 	{return (middle); }
 	if (array[middle] > value)
-	{return Search(array, init, middle, value); }
-	return Search(array, middle + 1, size, value);
+	{return (Search(array, init, middle, value)); }
+	return (Search(array, middle + 1, size, value));
 }
 
 /**
