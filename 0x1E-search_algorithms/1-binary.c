@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "search_algos.h"
 
 /**
  * binary_search - searches dividing all
@@ -17,7 +18,7 @@ int Search(int *array, size_t init, size_t size, int value)
 	if (init >= size)
 	{return (-1); }
 	middle = init + (size - init - 1) / 2;
-	printf("Searching in array: ");
+	printf("Searching in array:");
 	comma = " ";
 	for (i = init; i < size; i++)
 	{printf("%s%d", comma, array[i]), comma = ", ";	}
